@@ -1,0 +1,31 @@
+# CS210 .editorconfig
+# Tells your editor to use 4-space indentation, LF line endings, and a final
+# newline on every file, in line with the DFCS C Programming Standard.
+# Most editors (VS Code, vim, emacs, JetBrains tools) pick this up automatically;
+# some need an EditorConfig plugin installed.
+#
+# More info: https://editorconfig.org
+
+root = true
+
+[*]
+# §6.2: indentation is 4 spaces.
+indent_style = space
+indent_size = 4
+
+# Unix line endings everywhere — consistent across cadets on the course Ubuntu
+# VM, avoids spurious diffs from CRLF.
+end_of_line = lf
+
+# Always end files with a final newline. Some tools (and gcc) complain
+# otherwise.
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+# §3.1: line length cap. Some editors honor this as a soft guide / ruler.
+max_line_length = 100
+
+[Makefile]
+# Make is the famous exception: recipe lines MUST start with a literal TAB.
+indent_style = tab

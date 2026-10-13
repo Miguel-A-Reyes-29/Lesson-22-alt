@@ -1,0 +1,13 @@
+# Build artifacts
+strava_filter
+*.o
+*.dSYM/
+
+# Editor temp files
+*~
+*.swp
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

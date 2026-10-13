@@ -1,0 +1,62 @@
+# CS210 .clang-format
+# Encodes the DFCS C Programming Standard, Section 6 (whitespace, indentation,
+# brace placement) plus Section 3.1 (line length). Format-on-save with this
+# config keeps your code consistent with the standard automatically.
+#
+# To check: in VS Code, install the "C/C++" or "Clang-Format" extension and
+# enable Format on Save. Your code should reformat when you hit Ctrl+S.
+#
+# To run by hand: clang-format -i *.c *.h
+
+# Use a language-appropriate base, then override what the standard pins.
+Language: Cpp
+BasedOnStyle: LLVM
+
+# §6.2: 4-space indentation.
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+
+# §6.2: open brace on the same line as the statement.
+BreakBeforeBraces: Attach
+
+# §3.1: no line exceeds 100 characters.
+ColumnLimit: 100
+
+# §6.1: one space between operators and operands.
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceAfterCStyleCast: true
+
+# Pointer asterisk style — bind to the variable name (right-aligned). Matches
+# Beej's Guide, the C standard library style, and the existing CS210 reference
+# code. Example: `const char *name`, not `const char* name`.
+PointerAlignment: Right
+DerivePointerAlignment: false
+
+# §7.4 and §7.5: no single-line if statements or single-line loops. Force the
+# formatter to keep braces on their own lines so a one-liner cannot survive a
+# format pass.
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: None
+AllowShortCaseLabelsOnASingleLine: false
+
+# §6.1: blank lines separate logical paragraphs. Don't let the formatter
+# collapse them.
+MaxEmptyLinesToKeep: 2
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Includes: keep them in the order the cadet wrote them; the standard
+# specifies an order but it's a content rule, not a formatter rule.
+SortIncludes: Never
+
+# Misc readability defaults consistent with the standard's examples.
+AlignAfterOpenBracket: Align
+AlignTrailingComments: true
+SpaceBeforeRangeBasedForLoopColon: true
+SpacesBeforeTrailingComments: 2

@@ -1,0 +1,16 @@
+2026-04-01  run  3.20km  18min  HR 145
+2026-04-02  run  5.10km  29min  HR 148
+2026-04-05  run  8.40km  46min  HR 152
+2026-04-07  run  4.00km  22min  HR 144
+2026-04-10  run  6.20km  35min  HR 150
+2026-04-11  run  10.50km  58min  HR 153
+2026-04-13  run  3.50km  20min  HR 143
+2026-04-16  run  5.80km  32min  HR 149
+2026-04-17  run  4.40km  25min  HR 146
+2026-04-19  run  12.10km  68min  HR 154
+2026-04-21  run  5.20km  28min  HR 148
+2026-04-24  run  7.30km  40min  HR 151
+2026-04-25  run  3.80km  21min  HR 144
+2026-04-28  run  9.10km  50min  HR 152
+2026-04-30  run  15.20km  82min  HR 155
+15 activities matched.
